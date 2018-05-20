@@ -1,0 +1,77 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80vh;
+  margin-top: 2rem;
+}
+
+.adult {
+  background-color: teal;
+}
+
+.adult_button {
+  background-color: transparent;
+  border: 1px dotted orange;
+  color: white;
+  padding: 3px;
+  margin-left: 25px;
+}
+
+.main_input {
+  padding: .25rem;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  background-color: #e1e1e1;
+}
+
+.list_items {
+  position: relative;
+  padding: .5rem;
+  border-bottom: 1px inset #00000075;
+}
+
+.remove {
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.remove:hover {
+  color: red;
+}
+
+.adult_button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .main_input {
+    width: 100%;
+  }
+  
+  body {
+    padding: 2rem;
+    justify-content: center;
+  }
+
+  .stuff {
+    margin-top: 2rem;
+  }
+}
